@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spartan.iml" filepath="$PROJECT_DIR$/Spartan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpartanAPI.iml" filepath="$PROJECT_DIR$/SpartanAPI.iml" />
-    </modules>
-  </component>
-</project>
