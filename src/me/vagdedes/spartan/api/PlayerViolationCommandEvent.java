@@ -8,15 +8,18 @@ import org.bukkit.event.HandlerList;
 
 public class PlayerViolationCommandEvent extends Event implements Cancellable {
 
-    private Player p;
-    private Enums.HackType h;
-    private String c;
-    private boolean cancelled = false;
+    private final Player p;
+    private final Enums.HackType h;
+    private final Enums.HackType[] hs;
+    private final String c;
+    private boolean cancelled;
 
-    public PlayerViolationCommandEvent(Player player, Enums.HackType HackType, String command) {
+    public PlayerViolationCommandEvent(Player player, Enums.HackType HackType, Enums.HackType[] HackTypes, String command) {
         p = player;
         h = HackType;
+        hs = HackTypes;
         c = command;
+        cancelled = false;
     }
 
     public Player getPlayer() {
@@ -25,6 +28,10 @@ public class PlayerViolationCommandEvent extends Event implements Cancellable {
 
     public Enums.HackType getHackType() {
         return h;
+    }
+
+    public Enums.HackType[] getHackTypes() {
+        return hs;
     }
 
     public String getCommand() {
