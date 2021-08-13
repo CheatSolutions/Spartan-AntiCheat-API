@@ -247,26 +247,32 @@ public class API {
         BackgroundAPI.addPermission(p, permission);
     }
 
+    @Deprecated
     public static void sendClientSidedBlock(Player p, Location loc, Material m, byte b) {
         BackgroundAPI.sendClientSidedBlock(p, loc, m, b);
     }
 
+    @Deprecated
     public static void destroyClientSidedBlock(Player p, Location loc) {
         BackgroundAPI.destroyClientSidedBlock(p, loc);
     }
 
+    @Deprecated
     public static void removeClientSidedBlocks(Player p) {
         BackgroundAPI.removeClientSidedBlocks(p);
     }
 
+    @Deprecated
     public static boolean containsClientSidedBlock(Player p, Location loc) {
         return BackgroundAPI.containsClientSidedBlock(p, loc);
     }
 
+    @Deprecated
     public static Material getClientSidedBlockMaterial(Player p, Location loc) {
         return BackgroundAPI.getClientSidedBlockMaterial(p, loc);
     }
 
+    @Deprecated
     public static byte getClientSidedBlockData(Player p, Location loc) {
         return BackgroundAPI.getClientSidedBlockData(p, loc);
     }
