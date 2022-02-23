@@ -3,8 +3,8 @@ package me.vagdedes.spartan.system;
 public class Enums {
 
     public enum HackType {
-        Exploits, EntityMove, NoSwing, IrregularMovements, Clip, ImpossibleActions, ItemDrops, AutoRespawn, InventoryClicks, Sprint, Jesus, NoSlowdown,
-        Criticals, GhostHand, BlockReach, ElytraMove, BoatMove, FastBow, FastClicks, FastHeal, Fly, ImpossibleInventory, HitReach, FastBreak, Speed, FastPlace,
+        Exploits, EntityMove, NoSwing, IrregularMovements, ImpossibleActions, ItemDrops, AutoRespawn, InventoryClicks, Sprint, Jesus, NoSlowdown,
+        Criticals, GhostHand, BlockReach, FastBow, FastClicks, FastHeal, ImpossibleInventory, HitReach, FastBreak, Speed, FastPlace,
         MorePackets, NoFall, FastEat, Velocity, KillAura
     }
 
