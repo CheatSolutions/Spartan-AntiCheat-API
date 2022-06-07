@@ -7,8 +7,8 @@ import org.bukkit.event.HandlerList;
 
 public class CheckSilentToggleEvent extends Event implements Cancellable {
 
-    private Enums.HackType ht;
-    private Enums.ToggleAction ta;
+    private final Enums.HackType ht;
+    private final Enums.ToggleAction ta;
     private boolean cancelled = false;
 
     public CheckSilentToggleEvent(Enums.HackType hackType, Enums.ToggleAction toggleAction) {

@@ -26,6 +26,10 @@ public class API {
         return BackgroundAPI.getSetting(path);
     }
 
+    public static String getCategory(Player p, HackType hackType) {
+        return BackgroundAPI.getCategory(p, hackType);
+    }
+
     @Deprecated
     public static boolean hasVerboseEnabled(Player p) {
         return BackgroundAPI.hasVerboseEnabled(p);

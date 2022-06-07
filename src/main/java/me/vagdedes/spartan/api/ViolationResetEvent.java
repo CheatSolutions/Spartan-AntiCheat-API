@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class ViolationResetEvent extends Event implements Cancellable {
 
     private boolean cancelled = false;
-    private ArrayList<Enums.HackType> ignore = new ArrayList<>(Enums.HackType.values().length);
+    private final ArrayList<Enums.HackType> ignore = new ArrayList<>(Enums.HackType.values().length);
 
     public ViolationResetEvent() {
     }

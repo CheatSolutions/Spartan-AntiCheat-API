@@ -8,11 +8,11 @@ import org.bukkit.event.HandlerList;
 
 public class PlayerViolationEvent extends Event implements Cancellable {
 
-    private Player p;
-    private HackType h;
-    private String m;
-    private int v;
-    private boolean fp;
+    private final Player p;
+    private final HackType h;
+    private final String m;
+    private final int v;
+    private final boolean fp;
     private boolean cancelled = false;
 
     public PlayerViolationEvent(Player player, HackType HackType, Integer violation, String message, boolean falsePositive) {
@@ -41,6 +41,10 @@ public class PlayerViolationEvent extends Event implements Cancellable {
 
     public boolean isFalsePositive() {
         return fp;
+    }
+
+    public String getCategory() {
+        return BackgroundAPI.getCategory(p, h);
     }
 
     public boolean isCancelled() {

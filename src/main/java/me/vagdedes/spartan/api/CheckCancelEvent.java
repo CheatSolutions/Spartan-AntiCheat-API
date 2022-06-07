@@ -8,8 +8,8 @@ import org.bukkit.event.HandlerList;
 
 public class CheckCancelEvent extends Event implements Cancellable {
 
-    private Player p;
-    private Enums.HackType h;
+    private final Player p;
+    private final Enums.HackType h;
     private boolean cancelled = false;
 
     public CheckCancelEvent(Player player, Enums.HackType HackType) {
