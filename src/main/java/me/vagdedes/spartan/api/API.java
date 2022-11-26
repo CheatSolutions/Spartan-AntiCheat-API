@@ -223,8 +223,8 @@ public class API {
         return BackgroundAPI.getBanList();
     }
 
-    public static void addToWave(UUID uuid, String command) {
-        BackgroundAPI.addToWave(uuid, command);
+    public static boolean addToWave(UUID uuid, String command) {
+        return BackgroundAPI.addToWave(uuid, command);
     }
 
     public static void removeFromWave(UUID uuid) {

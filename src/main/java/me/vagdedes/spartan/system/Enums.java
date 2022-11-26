@@ -33,7 +33,7 @@ public class Enums {
 
     public enum Permission {
         condition, report, staff_chat, wave, reconnect, admin, reload, kick, bypass, manage, info,
-        chat_protection, warn, use_bypass, ban, unban, notifications, punishment;
+        chat_protection, warn, use_bypass, ban, unban, notifications;
 
         private final String key;
 

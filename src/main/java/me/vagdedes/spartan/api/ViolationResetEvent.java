@@ -1,36 +1,33 @@
 package me.vagdedes.spartan.api;
 
 import me.vagdedes.spartan.system.Enums;
+import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 public class ViolationResetEvent extends Event implements Cancellable {
 
-    private boolean cancelled = false;
-    private final ArrayList<Enums.HackType> ignore = new ArrayList<>(Enums.HackType.values().length);
+    private final Player player;
+    private final Enums.HackType hackType;
+    private boolean cancelled;
 
-    public ViolationResetEvent() {
+    public ViolationResetEvent(Player player, Enums.HackType hackType) {
+        this.player = player;
+        this.hackType = hackType;
+        cancelled = false;
     }
 
-    public void setIgnoredChecks(ArrayList<Enums.HackType> array) {
-        if (array != null) {
-            for (Enums.HackType hackType : array) {
-                ignoreCheck(hackType);
-            }
-        }
+    public Player getPlayer() {
+        return player;
     }
 
-    public void ignoreCheck(Enums.HackType hackType) {
-        if (!ignore.contains(hackType)) {
-            ignore.add(hackType);
-        }
-    }
-
-    public ArrayList<Enums.HackType> getIgnoredChecks() {
-        return ignore;
+    public Enums.HackType getHackType() {
+        return hackType;
     }
 
     public int getTime() {
