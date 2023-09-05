@@ -1,5 +1,6 @@
 name: SpartanAPI
 author: Evangelos Dedes @Vagdedes
 main: me.vagdedes.spartan.Register
-version: 9.0
+version: 10.0
+api-version: 1.13
 website: https://www.spigotmc.org/resources/25638
