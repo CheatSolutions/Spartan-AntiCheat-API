@@ -1,1 +1,3 @@
-API for the Spartan anti-cheat. Documentation available at: https://bit.ly/3f5J2xB
+This repository is no longer updated. Please refer to the link below to find its replacement.
+
+https://github.com/Vagdedes/Spartan-AntiCheat
